@@ -17,5 +17,5 @@ void setup() {
 void loop() {
   led_on ? (digitalWrite(LED_PIN, LOW), led_on = false) : (digitalWrite(LED_PIN, HIGH), led_on = true);
 
-  delay(100);
+  delay(1000);
 }

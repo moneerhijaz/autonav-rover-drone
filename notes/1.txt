@@ -1,0 +1,23 @@
+July 5, 2026
+
+enter ros2 pkg executables <name> to see a list of its executables
+e.g. ros2 pkg executables turtlesim
+
+to run an executable, put it in this format ros2 run <name of pkg> <name of executable>
+e.g. ros2 run turtlesim turtlesim_node
+
+ros2 <node, topic, service, action> list
+
+enter rqt to run gui of currently running nodes
+
+ros2 pkg list to list
+ros2 pkg executables to list pkg, exe 
+
+How to connect lidar to rviz2
+Windows: start VcXsrv
+PowerShell: ssh supereth
+Orin terminal 1: run LD19 driver
+Orin terminal 2: run RViz2
+RViz2: Fixed Frame = ldlidar_link, LaserScan topic = /ldlidar_node/scan
+
+ros2 launch ldlidar_node ldlidar_with_mgr.launch.py
