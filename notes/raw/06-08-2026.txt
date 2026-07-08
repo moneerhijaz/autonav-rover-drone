@@ -1,0 +1,50 @@
+July 8, 2026
+
+run ros2 node list to list currently running nodes/executables
+run ros2 node info /<executable> to see the node info e.g.
+
+ros2 node info /teleop_turtle
+/teleop_turtle
+  Subscribers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+  Publishers:
+    /parameter_events: rcl_interfaces/msg/ParameterEvent
+    /rosout: rcl_interfaces/msg/Log
+    /turtle1/cmd_vel: geometry_msgs/msg/Twist
+  Service Servers:
+    /teleop_turtle/describe_parameters: rcl_interfaces/srv/DescribeParameters
+    /teleop_turtle/get_parameter_types: rcl_interfaces/srv/GetParameterTypes
+    /teleop_turtle/get_parameters: rcl_interfaces/srv/GetParameters
+    /teleop_turtle/get_type_description: type_description_interfaces/srv/GetTypeDescription
+    /teleop_turtle/list_parameters: rcl_interfaces/srv/ListParameters
+    /teleop_turtle/set_parameters: rcl_interfaces/srv/SetParameters
+    /teleop_turtle/set_parameters_atomically: rcl_interfaces/srv/SetParametersAtomically
+  Service Clients:
+
+  Action Servers:
+
+  Action Clients:
+    /turtle1/rotate_absolute: turtlesim/action/RotateAbsolute
+
+ros2 topic list -t
+
+rqt_graph
+ros2 topic echo <path>
+ros2 topic info <path>
+ros2 inteface show 
+ros2 topic Publishersros2 service list -teleop_turtle
+ros2 find 
+ros2 interface showros2 service call
+ros2 paramlist -teleop_turtle
+ros2 param get/set path msg val
+
+ros2 param dump
+ros2 param dump > 
+ros2 param ldlidar_noderos2 run pkg
+ros2 action list -teleop_turtleros2 action inforos2 interfrace show /pathro2 action send
+
+colcon build --symlink-0install
+colcin build --packages -select 
+source install/local_setup.bash
+ros2 pkg create --build-type ament cmake --node-name
+rosdep install -i --from-path src --rosdis humbnle -y
