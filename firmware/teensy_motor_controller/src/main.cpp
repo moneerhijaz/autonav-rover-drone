@@ -16,6 +16,6 @@ void setup() {
 
 void loop() {
   led_on ? (digitalWrite(LED_PIN, LOW), led_on = false) : (digitalWrite(LED_PIN, HIGH), led_on = true);
-
+  led_on ? Serial.println("ON") : Serial.println("OFF");
   delay(1000);
 }

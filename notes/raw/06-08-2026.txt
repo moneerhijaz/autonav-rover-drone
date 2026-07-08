@@ -48,3 +48,5 @@ colcin build --packages -select
 source install/local_setup.bash
 ros2 pkg create --build-type ament cmake --node-name
 rosdep install -i --from-path src --rosdis humbnle -y
+
+ran ros2 pkg create rover_base --build-type ament_cmake --license GPL-3.0-only --dependencies rclcpp geometry_msgs nav_msgs std_msgs tf2_ros tf2_geometry_msgs --node-name motor_bridge_node to create the initial rover base setup to begin setting up the conection between the brain and teensy to motors
